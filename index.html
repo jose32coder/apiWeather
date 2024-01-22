@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="/img/sol.ico" type="image/x-icon">
+    <title>Clima</title>
+</head>
+<body>
+    <section class="section">
+        <div class="weather-app">
+            <div class="container">
+                <h3 class="brand">Api Weather</h3>
+                <div>
+                    <h1 class="temp">&#176;</h1>
+                    <div class="city-name">
+                        <h1 class="name"></h1>
+                        <small>
+                            <span class="time">
+
+                            </span>
+                            -
+                            <span class="date">
+                                
+                            </span>
+                        </small>
+                    </div>
+                    <div class="weather">
+                        <img 
+                        src="./icons/day/113.png" 
+                        alt="icon"
+                        class="icon"
+                        width="50"
+                        height="50"
+                        />
+                        <span class="condition"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel">
+                <form action="" id="locationInput">
+                    <input 
+                    type="text" 
+                    class="search" 
+                    placeholder="Busca la localizacion..."
+                    />
+                    <button type="submit" class="submit">
+                        <i class="fi fi-br-search"></i>
+                    </button>
+                </form>
+                <ul class="cities">
+                    <li class="city">Agua Blanca</li>
+                    <li class="city">Cojedes</li>
+                    <li class="city">Acarigua</li>
+                    <li class="city">Tokyo</li>
+                </ul>
+                <ul class="details">
+                    <h4>Detalles del clima</h4>
+                    <li>
+                        <span>Nubes</span>
+                        <span class="cloud"></span>
+                    </li>
+                    <li>
+                        <span>Humedad</span>
+                        <span class="humitidy"></span>
+                    </li>
+                    <li>
+                        <span>Viento</span>
+                        <span class="wind"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
